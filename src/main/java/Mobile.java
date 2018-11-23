@@ -35,7 +35,13 @@ public class Mobile{
     }
 
     public void call(String message){
-        System.out.println("Message : " + message);
+        this.basicInfo();
+        System.out.println("Message : " + message + "\n");
+        return;
+    }
+
+    public void basicInfo(){
+        System.out.println("name: " + this.name + ", color: " + this.color + ", brand: " + this.brand);
         return;
     }
 }
