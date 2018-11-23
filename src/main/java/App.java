@@ -25,5 +25,8 @@ public class App {
 
         iPhoneRobot iPhoneRobot = new iPhoneRobot("iPhoneRobot1", iPhone, 1);
         iPhoneRobot.call("Hi I am iPhoneRobot1.");
+
+        venus.changePhone(android);
+        venus.call("Hi I am Venus.");
     }
 }

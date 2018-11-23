@@ -12,4 +12,8 @@ public class Person {
         this.mobile.call(message);
         return;
     }
+
+    public void changePhone(Mobile mobile){
+        this.mobile = mobile;
+    }
 }
