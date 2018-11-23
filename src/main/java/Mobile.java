@@ -44,4 +44,12 @@ public class Mobile{
         System.out.println("name: " + this.name + ", color: " + this.color + ", brand: " + this.brand);
         return;
     }
+
+    public boolean limitExceed(String message, int limit){
+        if (message.length() > limit){
+            System.out.println("<" + this.brand + "> Message cannot be sent\n");
+            return true;
+        }
+        return false;
+    }
 }

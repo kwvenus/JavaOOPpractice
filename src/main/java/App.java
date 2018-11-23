@@ -8,11 +8,22 @@ public class App {
         Mobile mobile = new Mobile("Mobile","black","Mobile");
         mobile.call("your input message");
 
-        Mobile iPhone = new iPhone("iPhone","white","iPhone");
+        iPhone iPhone = new iPhone("iPhone","white","iPhone");
         iPhone.call("your input message");
 
-        Mobile android = new Android("Android","blue", "Andrioid");
+        Android android = new Android("Android","blue", "Android");
         android.call("your input message");
         System.out.println(new App().getGreeting());
+
+        Person venus = new Person("Venus", iPhone);
+        venus.call("Hi I am Venus.");
+        venus.call("Hi I am Venus. Hi I am Venus. Hi I am Venus.");
+
+        Person alex = new Person("Alex", android);
+        alex.call("Hi I am Alex.");
+        alex.call("Hi I am Alex. Hi I am Alex. Hi I am Alex.");
+
+        iPhoneRobot iPhoneRobot = new iPhoneRobot("iPhoneRobot1", iPhone, 1);
+        iPhoneRobot.call("Hi I am iPhoneRobot1.");
     }
 }
